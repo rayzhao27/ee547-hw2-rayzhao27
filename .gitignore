@@ -1,3 +1,6 @@
+# Keep this .gitignore file local (don't commit it)
+.gitignore
+
 # IDE and Editor directories
 .idea/
 .vscode/
@@ -104,14 +107,17 @@ validation_output/
 !README.txt
 !README.md
 
-# Allow specific JSON data files but exclude generated ones
+# Allow important project JSON files
 !papers.json
 !sample_data/*.json
+
+# Exclude generated/temporary JSON files
 embeddings.json
 training_log.json
 vocabulary.json
 test_*.json
 output_*.json
+*_output.json
 
 # Docker
 .dockerignore
